@@ -1,0 +1,3 @@
+\beamer@sectionintoc {1}{The Implicit Association Test}{3}{0}{1}
+\beamer@sectionintoc {2}{DscoreApp}{5}{0}{2}
+\beamer@sectionintoc {3}{Thanks}{6}{0}{3}

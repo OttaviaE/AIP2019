@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Ottavia M. Epifania" />
+  <title>DscoreApp</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link href="aip_slides_files/slidy-2/styles/slidy.css" rel="stylesheet" />
+  <script src="aip_slides_files/slidy-2/scripts/slidy.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+   href="style.css" />
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">DscoreApp</h1>
+  <p class="author">
+Ottavia M. Epifania
+  </p>
+  <p class="date">12/7/2019</p>
+</div>
+<div id="the-implicit-association-test" class="slide section level1">
+<h1>The Implicit Association Test</h1>
+<div id="test1", style="align="center;">
+<h4>IAT structure</h4>
+<table style="font-size:14pt; width=600px; poistion: center;">
+<tr>
+<th> block</th>
+<th> function </th>
+<th> left response key </th>
+<th> right response key </th>
+</tr>
+<tr>
+<td>1</td>
+<td>Practice</td>
+<td>flowers</td>
+<td>insects</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Practice</td>
+<td>good</td>
+<td>bad</td>
+</tr>
+<tr>
+<td style="background-color: lightblue;">3</td>
+<td style="background-color: lightblue;">Associative practice</td>
+<td style="background-color: lightblue;">flowers & good</td>
+<td style="background-color: lightblue;">insects & bad </td>
+</tr>
+<tr>
+<td style="background-color: lightblue;">4</td>
+<td style="background-color: lightblue;">Associative test</td>
+<td style="background-color: lightblue;">flowers & good</td>
+<td style="background-color: lightblue;">insects & bad </td>
+</tr>
+<tr>
+<td>5</td>
+<td>practice</td>
+<td>insects</td>
+<td>flowers</td>
+</tr>
+<tr>
+<td style="background-color: pink;">6</td>
+<td style="background-color: pink;">Associative practice</td>
+<td style="background-color: pink;">insects & good</td>
+<td style="background-color: pink;">flowers & bad</td>
+</tr>
+<tr>
+<td style="background-color: pink;">7</td>
+<td style="background-color: pink;">Associative test</td>
+<td style="background-color: pink;">insects & good</td>
+<td style="background-color: pink;">flowers & bad</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="the-d-score" class="slide section level1">
+<h1>The D-score</h1>
+<div style="position: fixed; top:70px;">
+<h4>
+D-score core procedure
+</h4>
+<p><span class="math inline">\(D_{pratice} = \frac{M_{b6} - M_{b3}}{sd_{b6,b3}}\)</span></p>
+<p><span class="math inline">\(D_{test} = \frac{M_{b7} - M_{b4}}{sd_{b7,b4}}\)</span></p>
+<p><span class="math inline">\(D_{score} = \frac{D_{pratice} + D_{test]}}{2}\)</span></p>
+</div>
+<div  style="position: fixed; top:70px;  right:25px;">
+<h4>
+</h4>
+<right>
+<table style="font-size:14pt;">
+<tr>
+<th>
+Dscore
+</th>
+<th>
+Error inflation
+</th>
+<th>
+Lower tail treatment
+</th>
+</tr>
+<tr>
+<td>
+D1
+</td>
+<td>
+Built-in correction
+</td>
+<td>
+No
+</td>
+</tr>
+<tr>
+<td>
+D2
+</td>
+<td>
+Built-in correction
+</td>
+<td>
+delete trials &lt; 400 ms
+</td>
+</tr>
+<tr>
+<td>
+D3
+</td>
+<td>
+Replace errors: mean (correct responses) + 2sd
+</td>
+<td>
+No
+</td>
+</tr>
+<tr>
+<td>
+D4
+</td>
+<td>
+Replace errors: mean (correct responses) + 600 ms
+</td>
+<td>
+No
+</td>
+</tr>
+<tr>
+<td>
+D5
+</td>
+<td>
+Replace errors: mean (correct responses) + 2sd
+</td>
+<td>
+delete trials &lt; 400 ms
+</td>
+</tr>
+<tr>
+<td>
+D6
+</td>
+<td>
+Replace errors: mean (correct responses) + 600 ms
+</td>
+<td>
+delete trials &lt; 400 ms
+</td>
+</tr>
+</table>
+</right>
+</div>
+</div>
+<div id="dscoreapp" class="slide section level1">
+<h1>DscoreApp</h1>
+<div style="position: fixed; center;">
+<!-- ![Alt Text](../img/folder/blah.jpg) --> <img height="600px"  src="https://media.giphy.com/media/kDxMeAGxwSXZal8qLF/giphy.gif">
+</div>
+</div>
+</div>
+
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>
