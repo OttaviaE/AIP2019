@@ -1,25 +1,22 @@
 ---
 title: "DscoreApp"
 author: "Ottavia M. Epifania"
-date: "University of Padova"
+date: "12/7/2019"
 output:
   ioslides_presentation:
     css: style.css
-  beamer_presentation: default
-subtitle: A Shiny App for the computation of the IAT D-score
+    runtime: shiny
+  # slidy_presentation: default
 logo: logo6.png
 ---
 
-```{r setup, echo = FALSE, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-#htmltools::HTML("<link href=\"style.css\" rel=\"stylesheet\"></link>")
-```
 
-## The Implicit Association Test 
+
+## The Implicit Association Test {.build}
 <div id="test1", style="align="center;">
 <center>
 <h4>IAT structure</h4>
-<table style="width=600px">
+<table style="font-size:14pt; width=600px">
 <tr>
 <th> block</th>
 <th> function </th>
@@ -72,11 +69,16 @@ knitr::opts_chunk$set(echo = FALSE)
 </center>
 </div>
 
+## prova 
+
+<div style="position: fixed;  bottom: 150px; right: 160px;">
+<img src="~/GitHub/AIP2019/fg.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="35%" style="display: block; margin: auto 0 auto auto;" />
+<!-- ![](~/GitHub/AIP2019/logo6.png) -->
+</div>
 
 ## The D-score {.build}
-<div style="position: fixed; top:23%;">
+<div style="position: fixed; top:230px;">
 <h4> D-score core procedure </h4>
-
 $D_{pratice} = \frac{M_{b6} - M_{b3}}{sd_{b6,b3}}$
 
 $D_{test} = \frac{M_{b7} - M_{b4}}{sd_{b7,b4}}$
@@ -84,11 +86,11 @@ $D_{test} = \frac{M_{b7} - M_{b4}}{sd_{b7,b4}}$
 $D_{score} = \frac{D_{pratice} + D_{test}}{2}$
 </div>
 
-<div  style="position: fixed; bottom:15%;  left:525px;">
+<div  style="position: fixed; bottom:140px;  left:525px;">
 <h4> <em> D-score </em>algorithms </h4>
 <h4>  </h4>
  <right>
-                                 <table style= "font-size:16pt;">
+                                 <table style="font-size:14pt;">
                                  <tr>
                                  <th>Dscore</th>
                                  <th>Error inflation</th>
@@ -131,68 +133,10 @@ $D_{score} = \frac{D_{pratice} + D_{test}}{2}$
 
 
 ## DscoreApp
-
-<div style="text-align: center;">
+<div style="position: fixed; left;">
   <!-- ![Alt Text](../img/folder/blah.jpg) -->
-  <img height="500px" src="https://media.giphy.com/media/QYLNgNH0xbjYfdbyTS/giphy.gif">
+  <img height="400px"  src="https://media.giphy.com/media/kDxMeAGxwSXZal8qLF/giphy.gif">
   </div>
 </div>
 
 
-## Upload & Prepare data
-
-<div style="text-align: center;">
-  <img height="500px" src="https://media.giphy.com/media/J1p7SDv3HIzREncnvU/giphy.gif">
-  </div>
-</div>
-
-
-## Compute & Plot
-<div style="text-align: center;">
-  <img height="500px" src="https://media.giphy.com/media/ZYLH0SFVTKveADb4KD/giphy.gif">
-  </div>
-</div>
-
-
-## 
-
-<h2 style="position: fixed; top:30%; left: 43%;">
-Thanks!
-</h2>
-
-<div style="position: fixed; bottom: 15%;">
-<table style="width:600px; border:0;">
-<tr>
-<td style="width:15%; border:none;">
-```{r, out.width="45%%"}
-knitr::include_graphics("logo6.png")
-```
-</td>
-<td style="text-align:left; border:none;"> http://fisppa.psy.unipd.it/DscoreApp/ </td>
-</tr>
-<tr>
-<td style="border:none;"> 
-```{r, out.width="45%%"}
-knitr::include_graphics("download.png")
-```
-</td>
-<td style="text-align:left; border:none;"> otta.epifania@gmail.com </td>
-</tr>
-<tr>
-<td style="border:none;"> 
-```{r, out.width="45%%"}
-knitr::include_graphics("github.png")
-```
-</td>
-<td style="text-align:left; border:none;"> GitHub/OttaviaE </td>
-</tr>
-<tr>
-<td style="border:none;">
-```{r, out.width="45%%"}
-knitr::include_graphics("twitter.png")
-```
-</td>
-<td style="text-align:left; border:none;"> @ExeOttavia </td>
-</tr>
-</table>
-</div>
