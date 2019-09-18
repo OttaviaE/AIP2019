@@ -21,10 +21,10 @@ knitr::opts_chunk$set(echo = FALSE)
 <h4>IAT structure</h4>
 <table style="width=600px">
 <tr>
-<th> block</th>
-<th> function </th>
-<th> left response key </th>
-<th> right response key </th>
+<th> Block</th>
+<th> Function </th>
+<th> Left response key </th>
+<th> Right response key </th>
 </tr>
 <tr>
 <td>1</td>
@@ -74,19 +74,21 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 ## The D-score {.build}
-<div style="position: fixed; top:23%;">
+<div style="position: top:12%;">
 <h4> D-score core procedure </h4>
 
-$D_{pratice} = \frac{M_{b6} - M_{b3}}{sd_{b6,b3}}$
+$D_{practice} = \frac{M_{b6} - M_{b3}}{sd_{b6,b3}}$
 
 $D_{test} = \frac{M_{b7} - M_{b4}}{sd_{b7,b4}}$
-
-$D_{score} = \frac{D_{pratice} + D_{test}}{2}$
 </div>
 
-<div  style="position: fixed; bottom:15%;  left:525px;">
+<div style="position: fixed; top:32%; left:45%">
+$D_{score} = \frac{D_{practice} + D_{test}}{2}$
+</div>
+
+<div  style="position: fixed; bottom:17%;  left:32%;">
 <h4> <em> D-score </em>algorithms </h4>
-<h4>  </h4>
+
  <right>
                                  <table style= "font-size:16pt;">
                                  <tr>
@@ -128,28 +130,99 @@ $D_{score} = \frac{D_{pratice} + D_{test}}{2}$
                                  </right>
 </div>
 
+## Available options {.build}
 
+<div>
+<table> 
+<tr>
+<th> </th>
+<th> Open source </th>
+<th> Programming skills </th>
+<th> Multiple Scores </th>
+<th> Plot </th>
+</tr>
+<tr>
+<td> SPSS </td>
+<td> NO </td>
+<td> YES </td>
+<td> YES </td>
+<td> NO </td>
+</tr>
+<tr>
+<td> Inquisit </td>
+<td> NO </td>
+<td> NO </td>
+<td> NO </td>
+<td> NO </td>
+</tr>
+<tr>
+<td style="font-family: Courier New,  Monospace;"> IATanalytics </td>
+<td> YES </td>
+<td> YES </td>
+<td> Not clear </td>
+<td> NO </td>
+</tr>
+<tr>
+<td style="font-family: Courier New,  Monospace;"> IATScore </td>
+<td> YES </td>
+<td> YES </td>
+<td> Not clear </td>
+<td> NO </td>
+</tr>
+<tr>
+<td style="font-family: Courier New,  Monospace;"> IAT </td>
+<td> YES </td>
+<td> YES </td>
+<td> YES </td>
+<td> YES </td>
+</tr>
+<tr>
+<td style="font-family: Courier New,  Monospace;"> IATScores </td>
+<td> YES </td>
+<td> YES </td>
+<td> YES </td>
+<td> YES </td>
+</tr>
+</table>
+</div>
+
+<div style="position: fixed; bottom: 25%; left: 33%;">
+<table style="width:700px; border:0;">
+<tr>
+<td style="width:15%; border:none;">
+```{r, out.width="75%%"}
+knitr::include_graphics("emoji.png")
+```
+</td>
+<td style="text-align:left; border:none;"> Something Open Source, user-friendly, able to compute multiple scores </td>
+</tr>
+</table>
+</div>
 
 ## DscoreApp
 
-<div style="text-align: center;">
+<div style="text-align: left;">
   <!-- ![Alt Text](../img/folder/blah.jpg) -->
-  <img height="500px" src="https://media.giphy.com/media/QYLNgNH0xbjYfdbyTS/giphy.gif">
+  <!-- <img height="500px" src="https://media.giphy.com/media/QYLNgNH0xbjYfdbyTS/giphy.gif"> -->
+  <img height="500px" src="https://media.giphy.com/media/XxRnzGtuSkXS8F12xE/giphy.gif">
   </div>
 </div>
 
 
-## Upload & Prepare data
+## Upload, Prepare, and Compute
 
-<div style="text-align: center;">
-  <img height="500px" src="https://media.giphy.com/media/J1p7SDv3HIzREncnvU/giphy.gif">
+<div style="text-align: left;">
+  <!-- <img height="500px" src="https://media.giphy.com/media/J1p7SDv3HIzREncnvU/giphy.gif"> -->
+  <img height="500px" src="https://media.giphy.com/media/LMoRwfyRQcDSRw10PK/giphy.gif
+">
   </div>
 </div>
 
 
-## Compute & Plot
-<div style="text-align: center;">
-  <img height="500px" src="https://media.giphy.com/media/ZYLH0SFVTKveADb4KD/giphy.gif">
+## Plot
+<div style="text-align: left;">
+  <!-- <img height="500px" src="https://media.giphy.com/media/ZYLH0SFVTKveADb4KD/giphy.gif"> -->
+  <img height="500px" src="https://media.giphy.com/media/McOEuzHb2EmDoYVF3B/giphy.gif">
   </div>
 </div>
 
@@ -160,7 +233,7 @@ $D_{score} = \frac{D_{pratice} + D_{test}}{2}$
 Thanks!
 </h2>
 
-<div style="position: fixed; bottom: 15%;">
+<div style="position: fixed; bottom: 20%; left: 33%;">
 <table style="width:600px; border:0;">
 <tr>
 <td style="width:15%; border:none;">
@@ -184,7 +257,7 @@ knitr::include_graphics("download.png")
 knitr::include_graphics("github.png")
 ```
 </td>
-<td style="text-align:left; border:none;"> GitHub/OttaviaE </td>
+<td style="text-align:left; border:none;"> <a href="https://github.com/OttaviaE"> @OttaviaE</a>  </td>
 </tr>
 <tr>
 <td style="border:none;">
@@ -192,7 +265,7 @@ knitr::include_graphics("github.png")
 knitr::include_graphics("twitter.png")
 ```
 </td>
-<td style="text-align:left; border:none;"> @ExeOttavia </td>
+<td style="text-align:left; border:none;"> <a href="https://twitter.com/ExeOttavia"> @ExeOttavia</a> </td>
 </tr>
 </table>
 </div>
