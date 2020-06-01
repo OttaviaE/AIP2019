@@ -1,0 +1,73 @@
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{library}\hlstd{(tableHTML)}
+\hlkwd{library}\hlstd{(data.table)}
+\hlstd{iat} \hlkwb{<-} \hlkwd{data.table}\hlstd{(}\hlkwc{Block} \hlstd{=} \hlnum{1}\hlopt{:}\hlnum{7}\hlstd{,} \hlkwc{Function} \hlstd{=} \hlkwd{c}\hlstd{(}\hlkwd{rep}\hlstd{(}\hlstr{"Practice"}\hlstd{,} \hlnum{2}\hlstd{),} \hlstr{"Associative Practice Mapping A"}\hlstd{,} \hlstr{"Associative Test Mapping A"}\hlstd{,} \hlstr{"Practice"}\hlstd{,} \hlstr{"Associative Practice Mapping B"}\hlstd{,} \hlstr{"Associative Test Mapping B"}\hlstd{),} \hlstr{"Left response key"} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"Object 1"}\hlstd{,} \hlstr{"Positive"}\hlstd{,} \hlstr{"Object 1 + Positive"}\hlstd{,} \hlstr{"Object 1 + Positive"}\hlstd{,}  \hlstr{"Object 2"}\hlstd{,} \hlstr{"Object 2 + Positive"}\hlstd{,} \hlstr{"Object 2 + Positive"}\hlstd{),} \hlstr{"Right response key"} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"Object 2"}\hlstd{,} \hlstr{"Negative"}\hlstd{,} \hlstr{"Object 2 + Negative"}\hlstd{,} \hlstr{"Object 2 + Negative"}\hlstd{,} \hlstr{"Object 1"}\hlstd{,} \hlstr{"Object 1 + Negative"}\hlstd{,} \hlstr{"Object 1 + Negative"}\hlstd{) )}
+
+\hlkwd{tableHTML}\hlstd{(iat,} \hlkwc{rownames} \hlstd{=} \hlnum{FALSE}\hlstd{,} \hlkwc{widths} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{20}\hlstd{,} \hlkwd{c}\hlstd{(}\hlkwd{rep}\hlstd{(}\hlnum{310}\hlstd{,} \hlnum{3}\hlstd{))),}
+          \hlkwc{caption} \hlstd{=} \hlstr{"Table 1: IAT structure."}\hlstd{)} \hlopt{%>%}
+  \hlkwd{add_theme}\hlstd{(}\hlkwc{theme} \hlstd{=} \hlstr{"scientific"}\hlstd{)} \hlopt{%>%}
+  \hlkwd{add_css_caption}\hlstd{(}\hlkwc{css} \hlstd{=} \hlkwd{list}\hlstd{(}\hlkwd{c}\hlstd{(}\hlstr{"font-weight"}\hlstd{,} \hlstr{"text-align"}\hlstd{),} \hlkwd{c}\hlstd{(}\hlstr{"bold"}\hlstd{,} \hlstr{"left"}\hlstd{)))}
+\end{alltt}
+\end{kframe}<!--html_preserve-->
+<table style="border-collapse:collapse;" class=table_1714 border=0>
+<caption style="font-weight:bold;text-align:left;">Table 1: IAT structure.</caption>
+<col width="20">
+<col width="310">
+<col width="310">
+<col width="310">
+<thead>
+<tr style="border-bottom:2px solid black;border-top:3px solid black;">
+  <th id="tableHTML_header_1">Block</th>
+  <th id="tableHTML_header_2">Function</th>
+  <th id="tableHTML_header_3">Left response key</th>
+  <th id="tableHTML_header_4">Right response key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td id="tableHTML_column_1" style="text-align:center;">1</td>
+  <td id="tableHTML_column_2" style="text-align:center;">Practice</td>
+  <td id="tableHTML_column_3" style="text-align:center;">Object 1</td>
+  <td id="tableHTML_column_4" style="text-align:center;">Object 2</td>
+</tr>
+<tr>
+  <td id="tableHTML_column_1" style="text-align:center;">2</td>
+  <td id="tableHTML_column_2" style="text-align:center;">Practice</td>
+  <td id="tableHTML_column_3" style="text-align:center;">Positive</td>
+  <td id="tableHTML_column_4" style="text-align:center;">Negative</td>
+</tr>
+<tr>
+  <td id="tableHTML_column_1" style="text-align:center;">3</td>
+  <td id="tableHTML_column_2" style="text-align:center;">Associative Practice Mapping A</td>
+  <td id="tableHTML_column_3" style="text-align:center;">Object 1 + Positive</td>
+  <td id="tableHTML_column_4" style="text-align:center;">Object 2 + Negative</td>
+</tr>
+<tr>
+  <td id="tableHTML_column_1" style="text-align:center;">4</td>
+  <td id="tableHTML_column_2" style="text-align:center;">Associative Test Mapping A</td>
+  <td id="tableHTML_column_3" style="text-align:center;">Object 1 + Positive</td>
+  <td id="tableHTML_column_4" style="text-align:center;">Object 2 + Negative</td>
+</tr>
+<tr>
+  <td id="tableHTML_column_1" style="text-align:center;">5</td>
+  <td id="tableHTML_column_2" style="text-align:center;">Practice</td>
+  <td id="tableHTML_column_3" style="text-align:center;">Object 2</td>
+  <td id="tableHTML_column_4" style="text-align:center;">Object 1</td>
+</tr>
+<tr>
+  <td id="tableHTML_column_1" style="text-align:center;">6</td>
+  <td id="tableHTML_column_2" style="text-align:center;">Associative Practice Mapping B</td>
+  <td id="tableHTML_column_3" style="text-align:center;">Object 2 + Positive</td>
+  <td id="tableHTML_column_4" style="text-align:center;">Object 1 + Negative</td>
+</tr>
+<tr style="border-bottom:3px solid black;">
+  <td id="tableHTML_column_1" style="text-align:center;">7</td>
+  <td id="tableHTML_column_2" style="text-align:center;">Associative Test Mapping B</td>
+  <td id="tableHTML_column_3" style="text-align:center;">Object 2 + Positive</td>
+  <td id="tableHTML_column_4" style="text-align:center;">Object 1 + Negative</td>
+</tr>
+</tbody>
+</table><!--/html_preserve-->
+\end{knitrout}
